@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Feedback Form</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="feather.css">
+  <link rel="stylesheet" href="themify-icons.css">
+  <link rel="stylesheet" href="vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="select2.min.css">
+  <link rel="stylesheet" href="select2-bootstrap.min.css">
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <style>
+    .card {
+
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid #e3e3e3;
+      border-radius: 20px;
+      align-content: center;
+    }
+    .option{
+      font-size: 150%;
+    }
+    /* #khushi{
+      font-size: 100px;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+
+    <!-- partial -->
+
+    <div class="row justify-content-center">
+      <div class="main-panel">
+        <div class="content-wrapper">
+
+
+          <div class="card">
+            <div class="card-body">
+              <center><img src="GP_logo.png" alt="logo" height="15%" width="15%"></center><br><br>
+              <center><h2>Feedback Form</h2></center>
+              <!-- <form class="forms-sample" action="insert_data.php" method="POST"> -->
+                <!-- <div class="form-group">
+                  <label for="DISTRICT_ID" style="font-size: 120%">Select District </label>
+                  <select class="form-control" name="DID" style="color: black" style="font-size: 150%">
+                    
+                  </select>
+                </div> -->
+                <form class="forms-sample" action="insert_data.php" method="POST">
+                  <div class="form-group">
+                    <label for="SUB_DIV_ID" style="font-size: 160%">Select City</label>
+                    <select class="form-control" name="SDID" style="color: black">
+                      <option id="sel" style="font-size: 120%">Select</option>
+                      <option style="font-size: 120%">AHMEDABAD</option>
+                      <option style="font-size: 120%">AMRELI</option>
+                      <option style="font-size: 120%">ANAND</option>
+                      <option style="font-size: 120%">BHARUCH</option>
+                      <option style="font-size: 120%">BHAVNAGAR</option>
+                      <option style="font-size: 120%">CHHOTA UDEPUR</option>
+                      <option style="font-size: 120%">DAHOD</option>
+                      <option style="font-size: 120%">DWARKA</option>
+                      <option style="font-size: 120%">GANDHINAGAR</option>
+                      <option style="font-size: 120%">JAMNAGAR</option>
+                      <option style="font-size: 120%">JUNAGADH</option>
+                      <option style="font-size: 120%">KACHCHH</option>
+                      <option style="font-size: 120%">MEHSANA</option>
+                      <option style="font-size: 120%">MORBI</option>
+                      <option style="font-size: 120%">NAVSARI</option>
+                      <option style="font-size: 120%">PATAN</option>
+                      <option style="font-size: 120%">RAJKOT</option>
+                      <option style="font-size: 120%">SURAT</option>
+                      <option style="font-size: 120%">SURENDRANAGAR</option>
+                      <option style="font-size: 120%">TAPI</option>
+                      <option style="font-size: 120%">VADODARA</option>
+                      <option style="font-size: 120%">VALSAD</option>
+                    </select>
+                  </div>
+                  <form class="forms-sample" action="insert_data.php" method="POST">
+                    <div class="form-group">
+                      <label for="PS_ID" style="font-size: 150%">Select Police Station</label>
+                      <select class="form-control" name="PSID" style="color: black">
+                        <option>Select</option>
+                        <option>ATHWAGET</option>
+                        <option>STATION ROAD</option>
+                        <option>VED ROAD STATION</option>
+                      </select>
+                    </div>
+
+              <form class="forms-sample" action="insert_data.php" method="POST">
+                <div class="form-group">
+                  <label for="How_come_ps" style="font-size: 150%">How did you Come To The Police Station?</label>
+                  <select class="form-control" name="HOW_COME_PS" style="color: black">
+                    <option>Select</option>
+                    <option>THROUGH A PERSON KNOWN TO A POLICE OFFICER</option>
+                    <option>WITH A NEIGHBOUR / LOCAL LEADER</option>
+                    <option>ON YOUR OWN</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="WAIT_TIME"style="font-size: 150%">How much time you had to wait to be heard?</label>
+                  <select class="form-control" NAME="WAIT_TIME" style="color: black"style="font-size: 120%">
+                    <option>Select</option>
+                    <option>MORE THAN 15 MINUTES</option>
+                    <option>15 MINUTES</option>
+                    <option>10 MINUTES</option>
+                    <option>5 MINUTES</option>
+                    <option>IMMEDIATELY</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="BEHAVIOUR_PI"style="font-size: 150%">How was the behaviour of police inspector?</label>
+                  <input type="text" class="form-control" NAME="BEHAVIOR_PI">
+                </div>
+
+                <div class="form-group">
+                  <label style="font-size: 150%">
+                    Was an FIR registered?
+                  </label>
+                  <br><br>
+                  <div>
+                    <label for="FIR" style="font-size: 120%"> 
+                      <input type="radio" id="FIR" name="FIR" value="yes">YES</input>
+
+                    </label>
+                  </div>
+                  <div>
+                    <label for="FIR" style="font-size: 120%">
+                      <input type="radio" id="FIR" name="FIR" value="no">NO</input>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label style="font-size: 150%">
+                    Were you given a copy of FIR?
+                  </label>
+                  <br><br>
+                  <div <label for="COPY_OF_FIR" style="font-size: 120%">
+                    <input type="radio" id="COPY_OF_FIR" name="COPY_OF_FIR">YES</input><br>
+                    </label>
+                  </div>
+                  
+                  <div>
+                    <label for="COPY_OF_FIR" style="font-size: 120%">
+                      <input type="radio" id="COPY_OF_FIR" name="COPY_OF_FIR">NO</input>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label style="font-size: 150%">
+                    how would you rate your experience?
+                  </label>
+                  <br><br>
+                  <div>
+                    <label for="RATING" style="font-size: 120%">
+                      <input type="radio" id="RATING" name="RATING" value="Excellent" > EXCELLENT</input>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="RATING" style="font-size: 120%">
+                      <input type="radio" id="RATING" name="RATING" value="Very Good" > VERY GOOD</input>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="RATING" style="font-size: 120%">
+                      <input type="radio" id="RATING" name="RATING" value="Good" > GOOD</input>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="RATING" style="font-size: 120%">
+                      <input type="radio" id="RATING" name="RATING" value="Average" > AVERAGE</input>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="RATING" style="font-size: 120%">
+                      <input type="radio" id="RATING" name="RATING" value="Bad" > BAD</input>
+                    </label>
+                  </div>
+                  <div>
+                    <label for="RATING" style="font-size: 120%">
+                      <input type="radio" id="RATING" name="RATING" value="Very Bad" > VERY BAD</input>
+                    </label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="PO_NAME"style="font-size: 150%">What is the name of police inspector?</label>
+                  <input type="text" class="form-control" NAME="PO_NAME">
+                </div>
+                <div class="form-group">
+                  <label for="PO_DESG" style="font-size: 150%">What was the designation of the officer you interacted with</label>
+                  <select class="form-control" id="PO_DESG" name="PO_DESG"style="font-size: 120%">
+                    <option>Constable</option>
+                    <option>Head_Constable</option>
+                    <option>SI</option>
+                    <option>PSI</option>
+                    <option>SHO</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="TIME_TO_SOLVE" style="font-size: 150%">Time to solve the case</label>
+                  <select class="form-control" id="TIME_TO_SOLVE" name="TIME_TO_SOLVE" style="font-size: 120%">
+                    <option>0-1 Days</option>
+                    <option>2-3 Days</option>
+                    <option>3-5 Days</option>
+                    <option>6-10 Days</option>
+                    <option>11-30 Days</option>
+                  </select>
+                </div>
+                <div class="form-group" >
+                  <label for="SUMMARY" style="font-size: 150%">Any additional comments</label>
+                  <textarea class="form-control" name="SUMMARY" rows="4"></textarea>
+                </div>
+
+
+                <input type="submit" class="btn btn-primary mr-2" value="Submit">
+                <button class="btn btn-light">Cancel</button>
+                <!-- <p id="khushi">the</p> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
